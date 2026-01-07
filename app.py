@@ -4,7 +4,7 @@ import streamlit as st
 
 
 st.title('Youtube video Summarization App using Langchain and GROQ LLM')
-st.subheader('Summarize youtube url')
+st.subheader('Enter Groq API Key first and then Summarize youtube url')
 
 #GROQ API KEY
 with st.sidebar:
@@ -34,4 +34,5 @@ if st.button("Summarize"):
     summary = chain.run(docs)
 
     st.subheader("Summary:")
+
     st.write(summary) 
